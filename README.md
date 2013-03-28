@@ -18,14 +18,21 @@ I put it at the end of the plugins.js file from html5 boilerplate usually and as
 	// x is the min-width of the site
 	minWidth(x);
 
-minWidth puts itself into the `window` object so it can be accessed at `window.minWidth`, but will not override anything that's already there. I usually wrap the function call as well:
-
-	// x is the min-width of the site
-	(function () { minWidth(x); }());
-
 minWidth takes two arguments:
 	
 	width : number, the min-width in pixels,
 	debug :	boolean (optional), console.log debug information
 
+Calling minWidth with debug will log to the console errors or the new viewport content if the viewport tag is changed.
+
+minWidth puts itself into the `window` object so it can be accessed at `window.minWidth`, but will not override anything that's already there. I usually wrap the function call as well:
+
+	// x is the min-width of the site
+	(function () { minWidth(x); }());
+
 At the moment minWidth requires Modernizr, but I will be getting rid of that soon.
+
+
+### To do:
+* Remove Modernizr and replace with native touch detect
+* Add a demo
