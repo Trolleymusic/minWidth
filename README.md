@@ -36,3 +36,4 @@ At the moment minWidth requires Modernizr, but I will be getting rid of that soo
 ### To do:
 * Remove Modernizr and replace with native touch detect
 * Add a demo
+* Work out some way to force minWidth into the global namespace - IE fails when calling minWidth and says method not allowed when calling window.minWidth - add this to bugs list on GitHub?

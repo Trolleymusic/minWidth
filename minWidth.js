@@ -1,3 +1,5 @@
+// minWidth - http://github.com/Trolleymusic/minWidth
+// minWidth plugin by Wayne Durack
 (function () {
 	var minWidth = function (width, debug) {
 		var viewport,

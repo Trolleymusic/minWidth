@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+        	.test {
+        		background: blue;
+	        	width: 500px;
+	        	height: 500px;
+	        	position: relative;
+        	}
+        	
+        	@media screen and (min-width: 1000px) {
+	        	.test {
+		        	background: red;
+	        	}
+        	}
+        </style>
+        <script src="//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
+        <script src="../minWidth.min.js"></script>
+        <script>
+        	// Set the viewport to 2000px wide
+	        (function () { minWidth(2000); }());
+        </script>
+    </head>
+    <body>
+    	<div class="test"></div>
+    </body>
+</html>
