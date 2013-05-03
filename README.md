@@ -34,8 +34,13 @@ At the moment minWidth requires Modernizr, but I will be getting rid of that soo
 
 minWidth also reruns the size check/viewport change on `window.orientationchange` and will change the viewport tag back to what it was if the new orientation is larger than the width specified.
 
+## Demos
+
+Check out the demos in the demo folder, there's a page without minWidth, and one with minWidth to show you how the script works.
+
+Live demos here: http://waynedurack.com/minWidth/demos/with.html vs http://waynedurack.com/minWidth/demos/without.html
+
 
 ### To do:
 * Remove Modernizr and replace with native touch detect
-* Add a demo
 * Work out some way to force minWidth into the global namespace - IE fails when calling minWidth and says method not allowed when calling window.minWidth - add this to bugs list on GitHub?
