@@ -32,6 +32,8 @@ minWidth puts itself into the `window` object so it can be accessed at `window.m
 
 At the moment minWidth requires Modernizr, but I will be getting rid of that soon.
 
+minWidth also reruns the size check/viewport change on `window.orientationchange` and will change the viewport tag back to what it was if the new orientation is larger than the width specified.
+
 
 ### To do:
 * Remove Modernizr and replace with native touch detect
